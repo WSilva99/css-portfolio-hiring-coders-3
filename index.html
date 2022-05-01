@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hiring Coders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <h2>WSilva<span>dev</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://wa.me/88988888888" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/WSilva99" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="mailto:teste@teste.com"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+
+            <div class="name">
+                <h1>Walmir Silva</h1>
+                <h5>Web Developer | Font-end Developer</h5>
+            </div>
+
+            <div id="more">
+                <i id="arrow" onclick="displayMore()" class="fas fa-sort-down slide-top"></i>
+            </div>
+
+            <div id="display-more">
+                <div class="about">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae nisi optio ipsum ducimus
+                        necessitatibus. Sit sint provident nostrum autem minus enim blanditiis quidem totam nisi beatae
+                        facilis, suscipit odio. Itaque fuga iste veritatis porro dolorum inventore repellat repudiandae
+                        praesentium laudantium
+                        tempore maiores, minima nobis quidem culpa labore sint? A quo atque maxime saepe sunt impedit
+                        illum
+                        sapiente molestiae facere?
+                    </p>
+                </div>
+
+                <div class="contact">
+                    <h3>
+                        Deixe seu e-mail para contato.
+                    </h3>
+                    <form action="">
+                        <input type="text" name="email" placeholder="E-mail para contato.">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script>
+        function displayMore() {
+            let arrow = document.getElementById('more');
+            let more = document.getElementById('display-more');
+            arrow.classList.toggle('flip-horizontal-top');
+            more.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
